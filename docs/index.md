@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# 欢迎来到帕帕拉恰的兽人《星露谷物语》合集包文档
+~~如果能耐心看下去就超越了一大批人~~
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+本合集由 Papalacha 整理和维护，收录了多个作者制作的《星露谷物语》兽人化及相关模组，旨在提供较为完整、方便安装的游戏体验。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+!!! info "关于模组作者"
+    Papalacha 是本合集的整理者，并非合集内所有模组的原作者。  
+    各模组的作者、来源和授权信息请参阅“模组列表与致谢”页面。
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 在安装开始前
+    你需要

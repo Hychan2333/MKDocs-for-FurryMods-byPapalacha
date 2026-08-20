@@ -1,0 +1,6 @@
+/* 午夜蓝主题色 */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #191970;
+  --md-primary-fg-color--light: #5A5AAD;
+  --md-primary-fg-color--dark:  #10104A;
+}
