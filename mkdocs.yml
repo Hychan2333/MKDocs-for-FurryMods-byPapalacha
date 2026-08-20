@@ -1,41 +1,60 @@
 nav:
   - 首页: index.md
 
-  - 文档:
-      - 文档首页: guide/index.md
-      - 安装教程: guide/installation.md
-      - 常见问题: guide/faq.md
+  - 开始:
+      - 文档首页: index.md
+      - 安装教程: guides/installation.md
+      - 常见问题: guides/faq.md
 
   - 模组列表: mods/list.md
+
 site_name: 帕帕拉恰的兽人星露谷合集包文档
 site_url: https://hychan2333.github.io/Furrydocs
+site_author: Hychan2333 (槐颤)
+
 theme:
   logo: assets/logo.png
   favicon: assets/images/favicon.png
   name: material
   palette:
-    scheme: default
+  - scheme: default
+    toggle:
+        icon: material/weather-sunny
+        name: 切换至暗色模式
+    
+  - scheme: slate
+    toggle:
+        icon: material/weather-night
+        name: 切换至亮色模式
+ 
   font:
     text: Roboto
     code: Roboto Mono
+
+  icon:
+    repo: fontawesome/brands/github #右上角的图标
+    logo: logo
+
   features:
     - navigation.instant
     - navigation.instant.progress
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.sections
-    - navigation.path
+    - navigation.tracking  #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.tabs  #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    - navigation.sections  #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.path  
     - navigation.top
-    - search.suggest
+    - search.suggest  # 搜索输入一些字母时推荐补全整个单词
     - search.highlight
+    - content.code.copy
+language: zh
+
 plugins:
   - search:
         separator: '[\s\u200b\-]'
         lang:
             - zh
             - en
-  - social:
-        enabled: !ENV [CI, false]
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -45,8 +64,10 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+
 extra_css:
   - stylesheets/extra.css
+
 extra:
    alternate:
       - name: "English"
@@ -55,3 +76,14 @@ extra:
       - name: "简体中文"
         link: "/zh/"
         lang: "zh"
+   generator: false
+   social:
+      - icon: fontawesome/brands/github
+        link: https://github.com/Hychan2333/
+        name: GitHub
+      - icon: fontawesome/regular/envelope #联系方式图标
+        link: mailto:<hychan2333@gmail.com> #邮件联系方式
+        name: 邮件联系
+      - icon: fontawesome/brands/bilibili
+        link: https://space.bilibili.com/1654311192
+        name: 哔哩哔哩
